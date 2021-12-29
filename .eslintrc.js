@@ -16,6 +16,7 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "semicolon": [true, "never", "ignore-interfaces"]
+    "semicolon": [0, "never"],
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
   },
 };
